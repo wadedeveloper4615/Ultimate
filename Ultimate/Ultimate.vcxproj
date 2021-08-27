@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{E512EB0F-E6D7-4E19-BA5D-BA3429588432}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions);_WIN32_WINNT=_WIN32_WINNT_MAXVER</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <BrowseInformation>true</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions);_WIN32_WINNT=_WIN32_WINNT_MAXVER</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <BrowseInformation>true</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>;_WIN32_WINNT=_WIN32_WINNT_MAXVER</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <BrowseInformation>true</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PreprocessorDefinitions>;_WIN32_WINNT=_WIN32_WINNT_MAXVER</PreprocessorDefinitions>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <BrowseInformation>true</BrowseInformation>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Attribute.cpp" />
+    <ClCompile Include="Embr.cpp" />
+    <ClCompile Include="EmbrEntry.cpp" />
+    <ClCompile Include="ExFat.cpp" />
+    <ClCompile Include="ExFatEntry.cpp" />
+    <ClCompile Include="ExFatUCase.cpp" />
+    <ClCompile Include="Ext2.cpp" />
+    <ClCompile Include="Ext2Dyn.cpp" />
+    <ClCompile Include="Ext2Entry.cpp" />
+    <ClCompile Include="Ext2Grp.cpp" />
+    <ClCompile Include="Fat.cpp" />
+    <ClCompile Include="Fat32Entry.cpp" />
+    <ClCompile Include="Fat32Info.cpp" />
+    <ClCompile Include="FatCheck.cpp" />
+    <ClCompile Include="FatCList.cpp" />
+    <ClCompile Include="FatEntry.cpp" />
+    <ClCompile Include="FatFormat.cpp" />
+    <ClCompile Include="fsz.cpp" />
+    <ClCompile Include="FYSFS.cpp" />
+    <ClCompile Include="FYSFSEntry.cpp" />
+    <ClCompile Include="FYSFSFormat.cpp" />
+    <ClCompile Include="FYSOSSig.cpp" />
+    <ClCompile Include="GetImage.cpp" />
+    <ClCompile Include="Gpt.cpp" />
+    <ClCompile Include="GptEntry.cpp" />
+    <ClCompile Include="GPT_GUID_Type.cpp" />
+    <ClCompile Include="ImageBar.cpp" />
+    <ClCompile Include="InsertVName.cpp" />
+    <ClCompile Include="ISOBEA.cpp" />
+    <ClCompile Include="ISOBoot.cpp" />
+    <ClCompile Include="ISOEntry.cpp" />
+    <ClCompile Include="ISOImage.cpp" />
+    <ClCompile Include="ISONSR.cpp" />
+    <ClCompile Include="ISOPrimary.cpp" />
+    <ClCompile Include="ISOSupple.cpp" />
+    <ClCompile Include="ISOTime.cpp" />
+    <ClCompile Include="Lean.cpp" />
+    <ClCompile Include="LeanCheck.cpp" />
+    <ClCompile Include="LeanEAs.cpp" />
+    <ClCompile Include="LeanEntry.cpp" />
+    <ClCompile Include="LeanFormat.cpp" />
+    <ClCompile Include="LeanJournal.cpp" />
+    <ClCompile Include="LeanTime.cpp" />
+    <ClCompile Include="Mbr.cpp" />
+    <ClCompile Include="MbrEntry.cpp" />
+    <ClCompile Include="Modeless.cpp" />
+    <ClCompile Include="MyImageList.cpp" />
+    <ClCompile Include="MyStatic.cpp" />
+    <ClCompile Include="MyTreeCtrl.cpp" />
+    <ClCompile Include="NewImage.cpp" />
+    <ClCompile Include="NewPart.cpp" />
+    <ClCompile Include="NTFS.cpp" />
+    <ClCompile Include="NTFSEntry.cpp" />
+    <ClCompile Include="OurFind.cpp" />
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Settings.cpp" />
+    <ClCompile Include="SFS.cpp" />
+    <ClCompile Include="SFSEntry.cpp" />
+    <ClCompile Include="SFSFormat.cpp" />
+    <ClCompile Include="StdAfx.cpp" />
+    <ClCompile Include="UDF_Tag.cpp" />
+    <ClCompile Include="UltimageResize.cpp" />
+    <ClCompile Include="ultimate.cpp" />
+    <ClCompile Include="ultimateDlg.cpp" />
+    <ClCompile Include="Unknown.cpp" />
+    <ClCompile Include="VDI.cpp" />
+    <ClCompile Include="VHD.cpp" />
+    <ClCompile Include="ViewBitmap.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Attribute.h" />
+    <ClInclude Include="Embr.h" />
+    <ClInclude Include="EmbrEntry.h" />
+    <ClInclude Include="ExFat.h" />
+    <ClInclude Include="ExFatEntry.h" />
+    <ClInclude Include="ExFatUCase.h" />
+    <ClInclude Include="ExFatUcaseTab.h" />
+    <ClInclude Include="Ext2.h" />
+    <ClInclude Include="Ext2Dyn.h" />
+    <ClInclude Include="Ext2Entry.h" />
+    <ClInclude Include="Ext2Grp.h" />
+    <ClInclude Include="fat.h" />
+    <ClInclude Include="Fat32Entry.h" />
+    <ClInclude Include="Fat32Info.h" />
+    <ClInclude Include="FatCList.h" />
+    <ClInclude Include="FatEntry.h" />
+    <ClInclude Include="FatFormat.h" />
+    <ClInclude Include="framework.h" />
+    <ClInclude Include="fsz.h" />
+    <ClInclude Include="FYSFS.h" />
+    <ClInclude Include="FYSFSEntry.h" />
+    <ClInclude Include="FYSFSFormat.h" />
+    <ClInclude Include="FYSOSSig.h" />
+    <ClInclude Include="GetImage.h" />
+    <ClInclude Include="Gpt.h" />
+    <ClInclude Include="GptEntry.h" />
+    <ClInclude Include="GPT_GUID_Type.h" />
+    <ClInclude Include="ImageBar.h" />
+    <ClInclude Include="InsertVName.h" />
+    <ClInclude Include="ISOBEA.h" />
+    <ClInclude Include="ISOBoot.h" />
+    <ClInclude Include="ISOEntry.h" />
+    <ClInclude Include="ISOImage.h" />
+    <ClInclude Include="ISONSR.h" />
+    <ClInclude Include="ISOPrimary.h" />
+    <ClInclude Include="ISOSupple.h" />
+    <ClInclude Include="ISOTime.h" />
+    <ClInclude Include="Lean.h" />
+    <ClInclude Include="LeanEAs.h" />
+    <ClInclude Include="LeanEntry.h" />
+    <ClInclude Include="LeanFormat.h" />
+    <ClInclude Include="LeanJournal.h" />
+    <ClInclude Include="LeanTime.h" />
+    <ClInclude Include="Mbr.h" />
+    <ClInclude Include="MbrEntry.h" />
+    <ClInclude Include="Modeless.h" />
+    <ClInclude Include="MyImageList.h" />
+    <ClInclude Include="MyStatic.h" />
+    <ClInclude Include="MyTreeCtrl.h" />
+    <ClInclude Include="NewImage.h" />
+    <ClInclude Include="NewPart.h" />
+    <ClInclude Include="ntddcdrm.h" />
+    <ClInclude Include="ntddstor.h" />
+    <ClInclude Include="NTFS.h" />
+    <ClInclude Include="NTFSEntry.h" />
+    <ClInclude Include="OurFind.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Settings.h" />
+    <ClInclude Include="SFS.h" />
+    <ClInclude Include="SFSEntry.h" />
+    <ClInclude Include="SFSFormat.h" />
+    <ClInclude Include="StdAfx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UDF_Tag.h" />
+    <ClInclude Include="UltimageResize.h" />
+    <ClInclude Include="ultimate.h" />
+    <ClInclude Include="ultimateDlg.h" />
+    <ClInclude Include="Unknown.h" />
+    <ClInclude Include="VDI.h" />
+    <ClInclude Include="VHD.h" />
+    <ClInclude Include="ViewBitmap.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource.hm" />
+    <None Include="res\ultimate.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ultimate.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
